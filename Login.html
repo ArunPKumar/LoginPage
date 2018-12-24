@@ -3,30 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <title>Login Page</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="login.css">
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
 </head>
-<body style= "background-color:lightblue; border:30px solid blue;">
+<body class = "container">
     <h1 style = "font-size:50px; color:palegreen;text-align: center;font-family: Verdana, Geneva, Tahoma, sans-serif;
                 border:2px soldi lightgreen">
         Welcome to my Site arun</h1>
     <hr>
-    <img  src = "images/bg.jpg"></img><br>
-    <label id = "email" >Enter<abbr title = "Electronic mail">Email</abbr> </label>
-    <input type="text" width = "50px"name="email" id="" placeholder = "Please Enter Email Address"></input><br>
+    <a href = "#C4">Move to C4</a>
+    <ul class = "home">
+        <li>home</li>
+        <li >support</li>
+        <li>main</li>
+        <li>help</li>
+    </ul>
+    <img  src = "images/bg.jpg" class="img-circle"><br>
+    <div  id = "login" class = col-md-12>
+    <label id = "email" >Enter<abbr title = "Electronic mail"> Email</abbr> </label>
+    <input type="text"name="email" id="" placeholder = "Please Enter Email Address" class="form-control col-md-4" ></input><br>
     <label>Enter Password : </label>
-    <input type="text" width = "50px"name="email" id=""placeholder = "Please Enter Password"></input><br>
-    <button style = "border: 2px solid tomato">SIGN IN</button><br>
-    <button>SIGN UP</button><br>
+    <input type="text" width = "50px"name="email" id=""placeholder = "Please Enter Password" class="form-control"></input><br>
+    <button style = "border: 2px solid tomato" class = "btn btn-success">SIGN IN</button>
+    <button class="btn btn-danger">SIGN UP</button><br>
+    </div >
+    <p class = "error" >Invalid User name and Password</p>
     <p style = "border: 3px solid red;margin-right: 50px;padding-left: 500px;">Please follow all the Instructions</p>
+    <div id = "notes">
+        <p>IF the Login is Failed ,Please follow the Instruction Provided in the Link below</p><br>
+        <a href = "https://www.w3schools.com/">click for more details<a>
+    </div>
     <hr>
     <label>hint:</label>
     <a href="https://www.w3schools.com/">I learned here</a><br>
     <label style = "color:red">Terms and conditions :</label>
     <ul style = "font-size: 25px; font-family: Verdana, Geneva, Tahoma, sans-serif">
-        <li style = "font-size: 25px;" title = "important hint" ><b> <i>Upper case not allowed</li>
-        <li style = "font-size: 25px;">Special <ins>like @,#,$ are</ins><sub> not </sub>allowed</li>
+        <li style = "font-size: 25px;list-style-type: circle;" title = "important hint" ><b> <i>Upper case not allowed</li>
+        <li style = "font-size: 25px; list-style-type:square;">Special <ins>like @,#,$ are</ins><sub> not </sub>allowed</li>
         <li>Only <mark>numbers</mark> <em>and</em> Lower case <sup>letters</sup> allowed</li>
     </ul>
+    <ol type = "I">
+        <li>Arun</li>
+        <li>Kumar</li>
+    </ol>
     <h2 title="Hint me!!!"><em>This is <del>the </del>my <u>first</u> notes</em></h2>
+    <div class ="col-md-12" >
+        <p>This is the End of the page</p>
+        <div class = col-md-6 style="    border: red 1px solid;">
+        <p>This is the ENd of the Site</p>
+            <div class = "col-md-4" style = "border:yellow solid 1px;">
+                <p>Divided</p>
+            </div>
+            <div class = "col-md-4" style = "border: yellowgreen solid 1px;">
+                <p>Divided</p>
+            </div>
+            <div class = "col-md-4" style = "border: gray solid 1px;">
+                <div class = "col-md-11" style = "border: blue solid 1px;">
+                    <p>more</p>
+                </div>
+                <div class = "col -md- 1" style = "border: yellowgreen solid 1px">
+                    <p>less</p>
+                </div>
+                <p id = "C4">Divided</p>
+            </div>
+        </div>
+        <div class = "col-md-6" style="    border: blue 1px solid;">
+        <p>This is the ENd of the Site</p>
+        <div class ="col-md-6" style = "border: blue solid 1px">
+            <p>Dividedd as 2</p>
+        </div>
+        <div class ="col-md-6" style = "border: green solid 1px">
+            <p>Dividedd as 2</p>
+        </div>
+        </div>
+    </div>
+    <table id = t01 style = "width: 100%" class="table table-stripped">
+        <tr>
+            <th>Name</th>
+            <th>Adress</th>
+            <th>Designation</th>
+        </tr>
+        <tr>
+            <td>Arun Kumar</td>
+            <td>Chennai</td>
+            <td>Developer</td>
+        </tr>
+        <tr>
+            <td>Ranjith</td>
+            <td>Chennai</td>
+            <td>Developer</td>
+        </tr>
+        <tr>
+            <td>Praveen</td>
+            <td>Chennai</td>
+            <td>Manager</td>
+        </tr>
+    </table>
+<iframe src="page2.html" height = "150" width = "100%"></iframe>
 </body>
 </html>

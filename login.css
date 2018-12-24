@@ -1,7 +1,31 @@
-#email{
-    text-align: justify;
+#notes{
+    color:rgb(255,120,60);
+    width:500px;
+    height:100%
+}
+p.error{
+    color:red;
+    text-align:center;
+}
+#login{
+    margin-left: 30%;
 }
 
-button{
-    margin-right: "30px"
+img{
+    margin-left:30%;
+}
+
+table#t01 th{
+        background-color: rgb(255,120,60);
+}
+.home>li{
+    float:left;
+    padding:20px;
+    width: 270px;
+    list-style-type: none;
+    background-color:rgb(255,120,60);
+}
+
+.home>li:hover{
+    background-color: black;
 }
