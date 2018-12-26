@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login Page</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href = "Appform.css">
+<script src = "Appform.js"></script>
+</head>
+<body>
+    <div class = "container">
+        <h1 style = "Margin-left:250px;">Login for more Details</h1>
+    </div>
+    <div class="row">
+            <div class="col-sm-4" style="background-color:lavender;">home</div>
+            <div class="col-sm-4" style="background-color:lavenderblush;">signup</div>
+            <div class="col-sm-4" style="background-color:lavender;">support</div>
+          </div>
+        </div>
+    <div>
+        <img src="Images/london.jpg" class = img-circle style = "margin-left: 400px;">
+    </div>
+        <div  id = "login" class = col-md-12>
+                <label id = "email" >Enter<abbr title = "Electronic mail"> Email</abbr> </label>
+                <input type="text"name="email" id="" placeholder = "Please Enter Email Address" class="form-control col-md-4" ></input><br>
+                <label>Enter Password : </label>
+                <input type="text" width = "50px"name="email" id=""placeholder = "Please Enter Password" class="form-control"></input><br>
+                <button style = "border: 2px solid tomato" class = "btn btn-success">SIGN IN</button>
+                <button class="btn btn-danger" type="text">SIGN UP</button>
+                <button type="button" class = "btn btn-info" onclick="document.getElementById('demo').innerHTML=Date()">Click me for date</button>
+                <button type = "button" class = "btn btn-info" onclick="hint()">hint</button>
+                <button type = "button" class = "btn btn-success" onclick = "user()">Created by</button>
+        </div >
+    <button type="button" class = "btn-danger" onclick =document.write(myname.fullname) style = "margin-left: 15px;height: 30px" >about</button>
+    <p id = "demo"></p>
+    <p id = "hint"></p>
+    <p id = "user"></p>
+    <label>Terms and Conditions:</label>
+    <p id = "terms">terms</p>
+    <script>
+        function hint(){
+            document.getElementById('hint').innerHTML = "Please Enter UserName and Password for Login";
+        }
+        function user(){
+    alert("This page was created by me")
+        }
+        var terms = ["Upper case not allowed","Special Characters not allowed","Only lowercase and numbers are allowed"]
+termlen = terms.length;
+
+text = "<ul>";
+for (i = 0;i < termlen;i++) {
+    text += "<li>" + terms[i] + "</li>";     
+}
+text += "<ul>";
+document.getElementById("terms").innerHTML = text;
+        
+    </script>
+</body>
+</html>

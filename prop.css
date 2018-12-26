@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+  }
 header{
     background-color: powderblue;
     width:100%;
@@ -6,3 +9,70 @@ header{
     font-size: 2em;
     padding-top:12px;
 }
+.head li{
+    float:left;
+    text-align: center;
+    padding:30px;
+}
+
+.signin li{
+    float:right;
+    text-align: center;
+    padding:30px;
+}
+
+
+
+#i10{
+    background-color: paleturquoise;
+    text-align: center;
+}
+
+#i20{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color:red;
+}
+
+footer {
+    background-color: palegreen;
+    height: 100px;
+    text-align: center;
+    padding-top: 9px;
+    font-size: 2em;
+    color: chocolate;
+}
+ul li a{
+    text-decoration: none;
+}
+ul{
+    list-style-type:none;
+}
+nav {
+    float: left;
+    width: 30%;
+    height: 300px; /* only for demonstration, should be removed */
+    background: #ccc;
+    padding: 20px;
+  }
+
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    color:brown;
+    font-size: 1.5em;
+    background-color: #f1f1f1;
+    background-image: url("Images/london.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px; /* only for demonstration, should be removed */
+  }
+
+  
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
